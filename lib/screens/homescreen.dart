@@ -18,10 +18,20 @@ class HomeScreen extends StatelessWidget {
                 .headline1
                 .copyWith(fontWeight: FontWeight.bold),
             children: [
-              TextSpan(text: "Punk"),
+              TextSpan(
+                text: "Punk",
+                style: TextStyle(color: Colors.amberAccent),
+              ),
+              TextSpan(
+                text: "Food",
+                style: TextStyle(color: Colors.red),
+              ),
             ],
           ),
         ),
+        actions: <Widget>[
+          IconButton(icon: Icon(Icons.access_alarm), onPressed: null),
+        ],
       ),
     );
   }
